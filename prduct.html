@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productpage</title>
+    <!-- tailwindcsslink -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- responsive navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class=" font-bold text-3x1">Greeden</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline :text-black" href="index.html"> Home </a>
+            </li>
+            <li>
+                <a class="hover:underline :text-black" href="prduct.html"> Products</a>
+            </li>
+            <li>
+                <a class="hover:underline :text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- side navbar -->
+    <section id="sidenavbar" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%; ">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col  gap-5 items-center text-gray-600 ">
+            <li>
+                <a class="hover:underline :text-black" href="index.html"> Home </a>
+            </li>
+            <li>
+                <a class="hover:underline :text-black" href="prduct.html"> Products</a>
+            </li>
+            <li>
+                <a class="hover:underline :text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        </nav>
+    </section>
+
+
+    <section class="text-center">
+        <h1 class="font-bold text-3xl">Our Products</h1>
+        <input id="search" type="text" placeholder="  " class="border border-black rounded p-2 m-3" style="width: 80%;">
+    </section>
+    <!-- Product shpowcasse -->
+    <section class="p-4 text-center">
+        <div id="Productcontainer" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./images/Best seller__1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Best seller__2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Snake plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Best seller__3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>violet Rose</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Best seller__4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>jasmine</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Best seller__1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Best seller__2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Snake plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Best seller__3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>violet Rose</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Best seller__4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>jasmine</h1>
+                <p>$20</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greeden</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis vel iste omnis animi obcaecati
+            magnamate.</p>
+        <p>&copy;2024 Greeden.com</p>
+
+    </section>
+
+    <script src="product.js"></script>
+</body>
+
+</html>
